@@ -53,22 +53,22 @@ const RoleBasedViews = {
   admin_of_system: {
     name: "admin",
     routes: {
-      "/dashboard": {
+      "/admindashboard": {
         label: "Dashboard",
         // component: <AdminDashboard />,
         icon: FaHome,
       },
-      "/approve-registration": {
+      "/approveregistration": {
         label: "Approve Registration",
         // component: <ApproveRegistration />,
         icon: FaUserCheck,
       },
-      "/mentor-matching": {
+      "/mentormatching": {
         label: "Mentor Matching",
         // component: <ContactUs />,
         icon: FaUserFriends,
       },
-      "/work-progress": {
+      "/workprogress": {
         label: "Work Progress",
         // component: <ContactUs />,
         icon: FaBarsProgress,

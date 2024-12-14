@@ -37,7 +37,7 @@ const EventsList = () => {
               key={index}
             >
               <span
-                className={`absolute flex items-center justify-center w-6 h-6 bg-${eachEventList?.color}-500 rounded-full -left-3`}
+                className={`absolute flex items-center justify-center w-6 h-6 bg-${eachEventList.color}-500 rounded-full -left-3`}
               >
                 {/* <span className="w-3 h-3 bg-white rounded-full"></span> */}
               </span>

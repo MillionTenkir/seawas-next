@@ -3,11 +3,12 @@ import { useContext, useState, useMemo, useEffect } from "react";
 // import { useLocation } from "react-router-dom";
 import { AuthContext } from "../context/auth";
 // import { NavigationSidebarContext } from "../../contexts/navigationSidebar";
-import { RoleBasedViews, DefaultViews } from "../components/RoleBasedView";
+import { RoleBasedViews, DefaultViews } from "./RoleBasedView";
 // import Logo from "../../assets/seawas-logo.png";
 // import { Link, useLocation } from "react-router-dom";
 import { NavigationSidebarContext } from "../context/navigationSidebar";
 import Link from "next/link";
+// import { useRouter } from "next/router";
 
 const SideBarItems = ({ isOpen, Label, Icon, to, isActive }) => (
   <Link
@@ -18,21 +19,23 @@ const SideBarItems = ({ isOpen, Label, Icon, to, isActive }) => (
   >
     {Icon && (
       <Icon
-        className={`${isActive ? "text-blue-600" : "text-gray-700"} text-xl`}
+        className={`${
+          isActive ? "text-blue-600" : "text-gray-700"
+        } font-normal text-xl`}
       />
     )}
     {isOpen && (
       <span
         className={`${
           isActive ? "text-blue-600" : "text-gray-800"
-        } font-semibold text-lg`}
+        } font-normal text-lg`}
       >
         {Label}
       </span>
     )}
   </Link>
 );
-function SideBar() {
+function SideBar({ active }) {
   // const {
   //   isNavigationSidebarOpen,
   //   setNavigationSidebarOpen,
@@ -83,13 +86,6 @@ function SideBar() {
     return mergedMenu;
   }, [rolesMenu, defaultMenu]);
 
-  //   const location = useLocation();
-  //   const [currentRoute, setCurrentRoute] = useState(location.pathname);
-
-  //   useEffect(() => {
-  //     setCurrentRoute(location.pathname);
-  //   }, [location.pathname]);
-
   return (
     <div
       className={` flex flex-col h-screen bg-white  border-r-2 border-gray-200   transition-all duration-300 ${
@@ -117,7 +113,10 @@ function SideBar() {
       </div>
       <nav className="flex flex-col items-center m-3 space-y-4 justify-center mt-12">
         {sidebarItems.map((eachSideBarItems, index) => {
-          // console.log("eachSidebAr Items are: ", eachSideBarItems);
+          console.log("eachSidebAr Items are: ", eachSideBarItems.to);
+          console.log("URL STIRNG: ", active);
+          console.log("URL STIRNG: ", active == eachSideBarItems.to);
+
           return (
             (eachSideBarItems.bool === undefined ||
               eachSideBarItems.bool === true) && (
@@ -125,7 +124,7 @@ function SideBar() {
                 key={index}
                 isOpen={isNavigationSidebarOpen}
                 {...eachSideBarItems}
-                // isActive={currentRoute === eachSideBarItems.to}
+                isActive={active === eachSideBarItems.to}
               />
             )
           );

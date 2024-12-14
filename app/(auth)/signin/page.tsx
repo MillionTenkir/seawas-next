@@ -52,16 +52,16 @@ const page = () => {
               placeholder="********"
             />
             <span className="text-gray-500 mt-4">Forget Password?</span>
-            <button className="bg-blue-700 shadow-2xl shadow-blue-600 w-2/3 md:w-1/2 h-12  text-white text-[15px] font-normal py-2 px-6 rounded-lg hover:bg-blue-950 transition duration-300 mt-5">
-              <Link
-                href="/home"
-                //   onClick={loginHandler}
-                type="button"
-                className=""
-              >
+            <Link
+              href="/admindashboard"
+              //   onClick={loginHandler}
+              // type="button"
+              className=" bg-blue-700 shadow-2xl shadow-blue-600 w-2/3 md:w-1/2 h-12  text-white text-[15px] font-normal py-2 px-6 rounded-lg hover:bg-blue-950 transition duration-300 mt-5"
+            >
+              <button className="">
                 <span className="text-center">Login</span>
-              </Link>
-            </button>
+              </button>
+            </Link>
             {/* <button className="w-2/3 md:w-1/2 h-12  text-gray-800 font-semibold py-2 px-6 rounded-lg transition duration-300 mt-3">
             Continue by Facebook
           </button>

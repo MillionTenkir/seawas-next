@@ -10,9 +10,9 @@
   }
 }
 
-body {
+/* body {
   background-color: #faf8f8;
-}
+} */
 
 @layer utilities {
   .flex-between {
