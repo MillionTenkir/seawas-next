@@ -23,7 +23,7 @@ const page = () => {
         <section className="w-full flex items-end flex-col ">
           <div className="flex flex-row">
             <div className="container mx-auto">
-              <h1 className="uppercase py-3 font-work-sans font-bold text-gray-800 sm:text-[30px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
+              <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[30px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
                 Dashboard
               </h1>
             </div>
@@ -90,7 +90,7 @@ const page = () => {
               isPositive={true}
             />
           </div>
-          <div>
+          <div className="bg-white">
             <AdminPieChart />
           </div>
         </section>

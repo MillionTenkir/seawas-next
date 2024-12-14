@@ -101,7 +101,7 @@ const page = () => {
         <section className="w-full flex items-end flex-col ">
           <div className="flex flex-row">
             <div className="container mx-auto">
-              <h1 className="uppercase py-3 font-work-sans font-bold text-gray-800 sm:text-[25px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
+              <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[25px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
                 Pending Approvals
               </h1>
             </div>
@@ -119,7 +119,7 @@ const page = () => {
               <div className="flex items-center justify-center">
                 <span className="space-x-2 px-2">Showing:</span>
 
-                <select>
+                <select className="bg-blue-50">
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>

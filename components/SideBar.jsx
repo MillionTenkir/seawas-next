@@ -107,7 +107,7 @@ function SideBar({ active }) {
           <img
             src="/circle-logo.png"
             alt="logo for the sidebar"
-            className="w-52"
+            className="w-96"
           />
         )}
       </div>

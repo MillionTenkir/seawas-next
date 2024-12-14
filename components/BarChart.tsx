@@ -87,40 +87,40 @@ const AdminBarChart = () => {
         </div>
       </div>
       <div className="flex-1 pb-0">
-        <AreaChart
-          width={1000}
-          height={250}
-          data={data}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-        >
-          <defs>
-            <linearGradient id="male" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#4184e1" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#4184e1" stopOpacity={0} />
-            </linearGradient>
-            <linearGradient id="female" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#fc7edd" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#fc7edd" stopOpacity={0} />
-            </linearGradient>
-          </defs>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Area
-            type="monotone"
-            dataKey="male"
-            stroke="#4184e1"
-            fillOpacity={1}
-            fill="url(#male)"
-          />
-          <Area
-            type="monotone"
-            dataKey="female"
-            stroke="#fc7edd"
-            fillOpacity={1}
-            fill="url(#female)"
-          />
-        </AreaChart>
+        <ResponsiveContainer width="100%" height={250}>
+          <AreaChart
+            data={data}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="male" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#4184e1" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#4184e1" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="female" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#fc7edd" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#fc7edd" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="male"
+              stroke="#4184e1"
+              fillOpacity={1}
+              fill="url(#male)"
+            />
+            <Area
+              type="monotone"
+              dataKey="female"
+              stroke="#fc7edd"
+              fillOpacity={1}
+              fill="url(#female)"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
         {/* <BarChart
           width={500}
           height={300}
@@ -144,7 +144,7 @@ const AdminBarChart = () => {
       </div>
       <div className="flex-col gap-2 text-sm p-5">
         {/* <StatusLegend chartData={chartDataFilled} /> */}
-        <div className="leading-none text-muted-foreground text-gray-800">
+        <div className="leading-none text-muted-foreground text-gray-800 text-center">
           Male & Female Breakdown
         </div>
       </div>

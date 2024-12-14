@@ -34,7 +34,7 @@ const page = () => {
         <section className="w-full flex items-end flex-col ">
           <div className="flex flex-row">
             <div className="container mx-auto">
-              <h1 className="uppercase py-3 font-work-sans font-bold text-gray-800 sm:text-[25px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
+              <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[25px] sm:leading-[64px] text-[10px] leading-[46px] m-5 justify-end">
                 Mentor Matching
               </h1>
             </div>
@@ -43,7 +43,7 @@ const page = () => {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <Maintee />
           <div>
-            <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[18px] sm:leading-[64px] text-[10px] leading-[46px] px- text-center">
+            <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[18px] sm:leading-[64px] text-[10px] leading-[46px] mt-5 text-center">
               Available Mentors
             </h1>
             <div className="overflow-x-auto bg-white rounded-3xl p-5 border">
