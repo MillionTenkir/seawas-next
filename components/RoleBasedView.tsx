@@ -11,6 +11,7 @@ import {
   FaAddressCard,
   FaBookmark,
   FaBookReader,
+  FaCommentDots,
   FaHome,
   FaLightbulb,
   FaMoneyCheckAlt,
@@ -83,12 +84,12 @@ const RoleBasedViews = {
   donors_sponsors: {
     name: "mentors",
     routes: {
-      "/dashboard": {
+      "/mentordashboard": {
         label: "Dashboard",
         // component: <DonorsDashboard />,
         icon: FaHome,
       },
-      "/assigned-kidpreneurs": {
+      "/assignedkidpreneurs": {
         label: "Assigned Kidpreneurs",
         // component: <ContactUs />,
         icon: FaUserAstronaut,
@@ -96,7 +97,7 @@ const RoleBasedViews = {
       "/feedback": {
         label: "Feedback",
         // component: <ContactUs />,
-        // icon: FaCommentDots,
+        icon: FaCommentDots,
       },
       "/donations": {
         label: "Donations",

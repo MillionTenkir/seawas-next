@@ -18,8 +18,8 @@ const page = () => {
       <section className="w-full flex justify-center items-center flex-col px-6">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex flex-row justify-evenly items-center gap-5 bg-white shadow-md shadow-gray-200">
-            <div className="flex flex-col gap-5">
-              <div>
+            <div className="flex flex-col gap-5 md:divide-y md:divide-gray-300  ">
+              <div className="">
                 <h1 className="uppercase font-work-sans font-semibold text-gray-800 sm:text-[20px] sm:leading-[64px] text-[10px] leading-[46px] text-center">
                   Total $
                 </h1>
@@ -36,8 +36,8 @@ const page = () => {
                 </h1>
               </div>
             </div>
-            <div className="flex flex-col  gap-5">
-              <div>
+            <div className="flex flex-col  gap-5 md:divide-y md:divide-gray-300">
+              <div className="">
                 <h1 className="uppercase font-work-sans font-semibold text-gray-800 sm:text-[20px] sm:leading-[64px] text-[10px] leading-[46px] text-center">
                   Promised $
                 </h1>
@@ -65,8 +65,8 @@ const page = () => {
           <div className="bg-white">
             <MoneyBarChart />
           </div>
-          <div>
-            <MoneyPieChart />
+          <div className="flex justify-center items-center ml-10 bg-white">
+            <AdminPieChart />
           </div>
         </div>
       </section>
