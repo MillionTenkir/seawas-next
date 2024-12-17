@@ -41,7 +41,7 @@ const AdminBarChart = () => {
     },
     {
       name: "Grade 8",
-      male: 130,
+      male: 200,
       female: 160,
       total: 290,
     },
@@ -53,14 +53,14 @@ const AdminBarChart = () => {
     },
     {
       name: "Grade 10",
-      male: 30,
+      male: 70,
       female: 25,
       total: 290,
     },
     {
       name: "Grade 11",
       male: 46,
-      female: 30,
+      female: 80,
       total: 290,
     },
     {
@@ -72,7 +72,7 @@ const AdminBarChart = () => {
     {
       name: "Others",
       male: 250,
-      female: 200,
+      female: 100,
       total: 290,
     },
   ];
