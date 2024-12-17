@@ -28,6 +28,17 @@ const Navbar = () => {
                   Home
                 </p>
               </Link>
+              <Link href="/aboutus">
+                <p
+                  className={`${
+                    currentPage == "aboutus"
+                      ? "text-blue-600 font-semibold"
+                      : "text-gray-900"
+                  } text-lg text-center font-work-sans`}
+                >
+                  About Us
+                </p>
+              </Link>
               <Link href="/handhuuraas">
                 <span
                   className={`${

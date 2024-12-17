@@ -4,25 +4,33 @@ const EventsList = () => {
   const eventListManager = [
     {
       id: 1,
-      eventName: "Seminar",
+      eventName: "SEAWAS Anniversary",
       date: "December 10, 2024",
-      color: "blue",
+      color: "bg-yellow-300",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illum ducimus mollitia nesciunt numquam excepturi, in qui assumenda repellendus doloremque!",
     },
     {
       id: 2,
-      eventName: "Get together",
-      date: "December 14, 2024",
-      color: "red",
+      eventName: "Seminar",
+      date: "December 10, 2024",
+      color: "bg-blue-500",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illum ducimus mollitia nesciunt numquam excepturi, in qui assumenda repellendus doloremque!",
     },
     {
       id: 3,
+      eventName: "Get together",
+      date: "December 14, 2024",
+      color: "bg-red-500",
+      description:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illum ducimus mollitia nesciunt numquam excepturi, in qui assumenda repellendus doloremque!",
+    },
+    {
+      id: 4,
       eventName: "Final Round Registration",
       date: "December 20, 2024",
-      color: "green",
+      color: "bg-green-500",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illum ducimus mollitia nesciunt numquam excepturi, in qui assumenda repellendus doloremque!",
     },
@@ -30,6 +38,7 @@ const EventsList = () => {
   return (
     <>
       <div className="container mx-auto p-6 font-work-sans">
+          <h1 className="uppercase text-center text-[20px] font-bold text-gray-800" >Events</h1>
         <div className="relative border-l border-gray-300">
           {eventListManager.map((eachEventList, index) => (
             <div
@@ -37,7 +46,7 @@ const EventsList = () => {
               key={index}
             >
               <span
-                className={`absolute flex items-center justify-center w-6 h-6 bg-${eachEventList.color}-500 rounded-full -left-3`}
+                className={`absolute flex items-center justify-center w-6 h-6 ${eachEventList.color} rounded-full -left-3`}
               >
                 {/* <span className="w-3 h-3 bg-white rounded-full"></span> */}
               </span>
