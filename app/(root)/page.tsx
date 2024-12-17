@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { BadgeCheck, Factory, Handshake, User } from "lucide-react";
+import { BadgeCheck, DollarSign, Factory, Handshake, User } from "lucide-react";
 import Carousel from "@/components/Carousel";
 import Events from "@/components/Events";
 
@@ -53,7 +53,7 @@ const page = () => {
             </div>
 
             <div>
-              <div className="text-3xl font-bold text-gray-900">90+</div>
+              <div className="text-3xl font-bold text-gray-900">93,738+</div>
               <p className="text-gray-500">Handhuuraas</p>
             </div>
           </div>
@@ -62,8 +62,8 @@ const page = () => {
               <Factory className="text-blue-600 text-2xl" />
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900">30+</div>
-              <p className="text-gray-500">Sectors</p>
+              <div className="text-3xl font-bold text-gray-900">16,008+</div>
+              <p className="text-gray-500">Start Ups</p>
             </div>
           </div>
           <div className="flex flex-col-1 items-center space-y-2">
@@ -71,8 +71,17 @@ const page = () => {
               <Handshake className="text-blue-600 text-2xl" />
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900">50+</div>
-              <p className="text-gray-500">Sponsors</p>
+              <div className="text-3xl font-bold text-gray-900">32,879+</div>
+              <p className="text-gray-500">Job's Created</p>
+            </div>
+          </div>
+          <div className="flex flex-col-1 items-center space-y-2">
+            <div className="p-4 bg-blue-100 rounded-full  mx-10">
+              <DollarSign className="text-blue-600 text-2xl" />
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-900">3.4B+</div>
+              <p className="text-gray-500">Total Assets</p>
             </div>
           </div>
         </div>
