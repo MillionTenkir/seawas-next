@@ -9,7 +9,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const data = {
     name: "Million",
-    role: "donors_sponsors",
+    role: "admin_of_system",
   };
   // const navigate = useNavigate();
   const [user, setUser] = useState(data);

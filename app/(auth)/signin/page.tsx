@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PhoneNumberInput from "@/components/PhoneNumberInput";
 
 const page = () => {
   return (
@@ -35,20 +36,14 @@ const page = () => {
             <h1 className="uppercase font-work-sans font-bold text-gray-800 sm:text-[36px] sm:leading-[64px] text-[10px] leading-[46px]">
               Login
             </h1>
-            <label className="text-gray-700 text-lg mt-5">Email</label>
+            <label className="text-gray-700 text-lg mt-5">Phone Number</label>
             <br />
-            <input
-              type="text"
-              className="border-0 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 w-1/2
-            "
-              placeholder="demo@gmail.com"
-            />
+            <PhoneNumberInput />
             <label className="text-gray-700 text-lg mt-5">Password</label>
             <br />
             <input
               type="password"
-              className="border-0 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 w-1/2
-            "
+              className="border-0 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 w-1/2"
               placeholder="********"
             />
             <span className="text-gray-500 mt-4">Forget Password?</span>
