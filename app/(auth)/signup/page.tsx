@@ -1,3 +1,4 @@
+import PhoneNumberInput from "@/components/PhoneNumberInput";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -51,12 +52,7 @@ const page = () => {
             />
             <label className="text-gray-700 text-lg mt-5">Email</label>
             <br />
-            <input
-              type="text"
-              className="border-0 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500 w-1/2
-            "
-              placeholder="demo@gmail.com"
-            />
+            <PhoneNumberInput />
             <label className="text-gray-700 text-lg mt-5">Password</label>
             <br />
             <input

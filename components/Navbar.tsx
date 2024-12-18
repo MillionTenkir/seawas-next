@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import LanguageDropDown from "./LanguageDropDown";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -98,6 +99,7 @@ const Navbar = () => {
                 Log In
               </Link>
               {/* </form> */}
+              <LanguageDropDown />
             </>
           ) : (
             <>
